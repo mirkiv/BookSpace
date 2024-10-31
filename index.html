@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>BookSpace</title>
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header>
+			<div class="fixed_width header_container">
+				<a href="index.html">
+					<img src="./img/BookSpaceMinLogo.png" width="200px" alt="BookSpace" />
+				</a>
+				<div class="search_container">
+					<input
+						type="text"
+						placeholder="Поиск по сайту"
+						class="search_input poppins-medium"
+						id="searchInput"
+					/>
+					<button class="search_button" id="searchButton">
+						<img
+							src="https://cdn-icons-png.freepik.com/512/9135/9135995.png?ga=GA1.1.216564423.1697051908"
+							width="25px"
+							alt=""
+						/>
+					</button>
+				</div>
+				<div class="authorizing_container">
+					<button
+						class="sign_up poppins-semibold"
+						onclick="window.location.href='register.html'"
+					>
+						Регистрация
+					</button>
+					<button class="sign_in poppins-medium">Войти</button>
+				</div>
+			</div>
+		</header>
+		<nav>
+			<div class="navigation">
+				<ul id="genres" class="genres poppins-black">
+					<li class="genre_tittle">
+						<img
+							src="https://png.klev.club/uploads/posts/2024-04/png-klev-club-5swj-p-tri-poloski-png-5.png"
+							alt=""
+							width="20px"
+						/>Жанры:
+					</li>
+					<li class="genre">
+						<button class="navBtn" value="fantasy" id="fantasy1">
+							Фантастика
+						</button>
+					</li>
+					<li class="genre">
+						<button class="navBtn" value="fantasy" id="fantasy2">
+							Фэнтези
+						</button>
+					</li>
+					<li class="genre">
+						<button class="navBtn" value="drama" id="drama">Драма</button>
+					</li>
+					<li class="genre">
+						<button class="navBtn" value="humor" id="humor">Комедия</button>
+					</li>
+					<li class="genre">
+						<button class="navBtn" value="horror" id="horror">Ужасы</button>
+					</li>
+					<li class="genre">
+						<button class="navBtn" value="mystery" id="mystery">Мистика</button>
+					</li>
+					<li class="genre">
+						<button class="navBtn" value="adventure" id="adventure">
+							Приключения
+						</button>
+					</li>
+					<li class="genre">
+						<button class="navBtn" value="romance" id="romance">
+							Романтика
+						</button>
+					</li>
+					<li class="genre">
+						<button class="navBtn" value="historical" id="historical">
+							Исторический
+						</button>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<main class="main">
+			<section id="section1" class="fixed_width section1">
+				<div class="s1_left poppins-bold">
+					<div>
+						<h1 class="s1_left_text">BookSpace</h1>
+						расширь границы своей вселенной!
+					</div>
+					<div>
+						<h6 class="poppins-light" style="color: #354054b1; font-size: 16px">
+							Узнайте о бестселлерах!
+						</h6>
+					</div>
+					<div>
+						<a href="#besrsellersId" class="s1_button poppins-extrabold">
+							Посмотреть бестселлеры
+						</a>
+					</div>
+				</div>
+				<div class="s1_right">
+					<img src="./img/lightHouse.png" alt="" class="s1_img" />
+				</div>
+			</section>
+			<section class="fixed_width section2">
+				<div id="besrsellersId" class="bestsellers">
+					<div class="bestsellers_tittle">
+						<h1 class="s2_text poppins-black">Бестселлеры</h1>
+						<h4 class="s2_text2 poppins-regular">Топ 30</h4>
+					</div>
+					<div class="bestsellers_cards"></div>
+				</div>
+			</section>
+		</main>
+		<div class="footer_img"></div>
+		<div class="footer_line"></div>
+		<footer>
+			<section id="section2" class="footer_container">
+				<div class="footer_side_1 poppins-extrabold">
+					<a href="#">
+						<img
+							class="medium_logo"
+							src="./img/BookSpaceMinLogo.png"
+							alt="BookSpace"
+						/>
+					</a>
+					<div class="footer_text">
+						Ваши<span class="blue_text">любимые</span>книги
+					</div>
+					<button class="footer_button poppins-black" onclick="favoriteOpen">
+						<img
+							class="favorite_add_icon2"
+							src="https://www.svgrepo.com/show/13666/heart.svg"
+							alt="like"
+						/>
+						Избранные
+					</button>
+					<div class="social_media_wrapper">
+						<h5>
+							Подпишитесь на наши соцсети чтобы всегда быть в курсе событий!
+						</h5>
+						<div class="social_media">
+							<a href="https://www.facebook.com/">
+								<img
+									class="social_icon"
+									src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/facebook-app-round-icon.png"
+									alt=""
+								/>
+							</a>
+							<a href="https://www.instagram.com/"
+								><img
+									class="social_icon"
+									src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/black-instagram-icon.png"
+									alt=""
+							/></a>
+							<a href="https://x.com/"
+								><img
+									class="social_icon"
+									src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/x-social-media-black-icon.png"
+									alt=""
+							/></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer_side_2 poppins-bold">
+					"Книга — это ключ к бесконечным мирам, где каждый поворот страницы
+					открывает новые горизонты для воображения."
+				</div>
+			</section>
+		</footer>
+		<script src="./index.js"></script>
+	</body>
+</html>
